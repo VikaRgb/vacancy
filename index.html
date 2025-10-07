@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <meta name="description" content="Вакансія продавця преміального одягу в ТЦ Метроград. Зарплата від 1500 грн/день. Шукаємо людину з досвідом продажів та відчуттям стилю для роботи з італійськими та люксовими брендами.">
+    <meta name="keywords" content="вакансія продавець, робота в ТЦ Метроград, продаж одягу, преміальний одяг, італійська мода, luxury fashion, робота Київ">
+    <meta name="author" content="ТЦ Метроград">
+    <meta name="robots" content="index, follow">
+    
+     
+    <meta property="og:title" content="Вакансія: Продавець преміального одягу | ТЦ Метроград">
+    <meta property="og:description" content="Шукаємо продавця з досвідом для роботи з італійськими та люксовими брендами. Зарплата від 1500 грн/день.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=630&fit=crop">
+    <meta property="og:locale" content="uk_UA">
+    <title>Вакансія: Продавець преміального одягу | ТЦ Метроград</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background-color: #fafaf8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #3d3d3d 100%);
+            color: #f5f5f0;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-text h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            color: #1a1a1a;
+        }
+
+        .salary-badge {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #1a1a1a;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .hero-text p {
+            font-size: 1.125rem;
+            margin-bottom: 16px;
+            color: #4a4a4a;
+        }
+
+        .hero-image {
+            flex: 1;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Requirements Section */
+        .requirements {
+            padding: 80px 20px;
+            background-color: #f5f5f0;
+        }
+
+        .requirements h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 48px;
+            color: #1a1a1a;
+        }
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .requirement-card {
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .requirement-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .requirement-card p {
+            font-size: 1.125rem;
+            color: #4a4a4a;
+        }
+
+        .icon {
+            font-size: 1.75rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+
+        .gallery h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 48px;
+            color: #1a1a1a;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f5f0;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+
+        .cta p {
+            font-size: 1.25rem;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.25rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #1a1a1a;
+            padding: 16px 48px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #c19b2f;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #f5f5f0;
+            padding: 32px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            .hero-content {
+                flex-direction: row;
+                gap: 60px;
+            }
+
+            .requirements-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-info {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            header h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero-text h2 {
+                font-size: 2.5rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .gallery-item img {
+                height: 350px;
+            }
+        }
+				.btn,.btn-link{
+					color: white;
+				}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Шукаємо Продавця</h1>
+            <p>Приєднуйтесь до команди преміального бутіку в ТЦ Метроград</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Ваша кар'єра у світі моди починається тут</h2>
+                    <div class="salary-badge">від 1500 грн/день</div>
+                    <p><strong>Локація:</strong> ТЦ Метроград</p>
+                    <p><strong>Що ми продаємо:</strong> Преміальний італійський одяг та люксовий китайський одяг</p>
+                    <p>Ми шукаємо людину, яка обожнює продажі, має досвід роботи та відчуття стилю.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop" alt="Преміальний бутік одягу">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements">
+        <div class="container">
+            <h2>Ми шукаємо людину, яка:</h2>
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <h3><span class="icon">❤️</span> Обожнює продажі</h3>
+                    <p>Ви отримуєте задоволення від спілкування з клієнтами та закриття угод</p>
+                </div>
+                <div class="requirement-card">
+                    <h3><span class="icon">💼</span> Має досвід</h3>
+                    <p>Ви вже працювали у сфері продажів та знаєте, як будувати довірливі відносини</p>
+                </div>
+                <div class="requirement-card">
+                    <h3><span class="icon">✨</span> Відчуття стилю</h3>
+                    <p>Ви розумієтесь на моді та можете допомогти клієнтам створити ідеальний образ</p>
+                </div>
+                <div class="requirement-card">
+                    <h3><span class="icon">🎯</span> Орієнтована на результат</h3>
+                    <p>Ви любите досягати цілей та отримувати винагороду за свої зусилля</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <!-- <section class="gallery">
+        <div class="container">
+            <h2>Наш бутік</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop" alt="Колекція преміального одягу">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&h=400&fit=crop" alt="Інтер'єр бутіку">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&h=400&fit=crop" alt="Люксовий одяг">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Готові приєднатися до нашої команди?</h2>
+            <p>Зв'яжіться з нами прямо зараз!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📞</span>
+                    <a href="tel:380634862233" class="btn-link">+38 0634862233</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>ТЦ Метроград</span>
+                </div>
+            </div>
+            <a href="tel:+380671234567" class="btn">Зателефонувати зараз</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MaskaradBoutique  Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
